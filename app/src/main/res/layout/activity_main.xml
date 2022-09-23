@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <!--    <com.example.yahlawdahhasal.Util.Views.CircleSurfaceView-->
+    <!--        android:id="@+id/circleSurfaceView"-->
+    <!--        android:layout_width="@dimen/_180sdp"-->
+    <!--        android:layout_height="@dimen/_180sdp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    <com.google.android.material.progressindicator.CircularProgressIndicator-->
+    <!--        android:layout_width="@dimen/_180sdp"-->
+    <!--        android:layout_height="@dimen/_180sdp"-->
+    <!--        app:trackColor="@color/gray_300"-->
+    <!--        app:indicatorSize="@dimen/_190sdp"-->
+    <!--        app:indicatorColor="@color/teal_700"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/circleSurfaceView"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/circleSurfaceView"-->
+    <!--        app:layout_constraintHorizontal_bias="0.5"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/circleSurfaceView"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/circleSurfaceView" />-->
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/ImageBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="#7134C7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.301"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.937"
+        app:rippleColor="@color/teal_700"
+        app:srcCompat="@drawable/ic_camera_24"
+        app:tint="#FFF" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/VideoBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="#7134C7"
+        app:layout_constraintBottom_toBottomOf="@+id/ImageBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.442"
+        app:layout_constraintStart_toEndOf="@+id/ImageBtn"
+        app:layout_constraintTop_toTopOf="@+id/ImageBtn"
+        app:layout_constraintVertical_bias="0.0"
+        app:rippleColor="@color/teal_700"
+        app:srcCompat="@drawable/ic_record_red_24"
+        app:tint="#FF1100" />
+</androidx.constraintlayout.widget.ConstraintLayout>
